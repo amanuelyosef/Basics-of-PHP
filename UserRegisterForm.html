@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Register</title>
+    <style>
+        *{
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form method="post">
+        <label for="username">User name</label>
+        <input name="username" required/>
+        <br><br>
+
+        <label for="password">password</label>
+        <input name="password" type="password" required/>
+        <br><br>
+
+        <label for="email">Email</label>
+        <input name="email" type="email" required/>
+        <br><br>
+
+        <label for="role">Role</label>
+        <input name="role" required/>
+        <br><br>
+
+        <label for="profile_picture">Profile picture</label>
+        <input type="file" name="file" id="file" required>
+        <br><br>
+
+        <button type="submit" name="submit">Upload </button>
+
+        
+
+    </form>
+
+</body>
+</html>
