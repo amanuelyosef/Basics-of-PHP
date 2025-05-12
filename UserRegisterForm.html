@@ -12,32 +12,30 @@
 </head>
 <body>
     
-    <form method="post">
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
         <label for="username">User name</label>
-        <input name="username" required/>
+        <input type = "text" name="username" />
         <br><br>
 
         <label for="password">password</label>
-        <input name="password" type="password" required/>
+        <input name="password" type="password"/>
         <br><br>
 
         <label for="email">Email</label>
-        <input name="email" type="email" required/>
+        <input name="email" type="email"/>
         <br><br>
 
         <label for="role">Role</label>
-        <input name="role" required/>
+        <input name="role" />
         <br><br>
 
-        <label for="profile_picture">Profile picture</label>
-        <input type="file" name="file" id="file" required>
+        <label for="profile_picture">Profile picture:</label>
+        <input type="file" name="profile_picture" id= "profile_picture">
         <br><br>
 
-        <button type="submit" name="submit">Upload </button>
+        <button type="submit" name="submit" id="submit">Upload</button>
 
-        
-
-    </form>
+    </form> 
 
 </body>
 </html>

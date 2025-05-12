@@ -1,33 +1,19 @@
 <?php
      
-require "connection.php"
+require "connection.php";
 
-echo $_POST['submit'];
 
-/*
-if (isset($_POST["submit"])) {
-    $targetDir = "uploads/";  
-    $targetFile = $targetDir . basename($_FILES["profile_picture"]["name"]); // File path
+if(isset($_POST["submit"])){
 
-    echo $targetFile
+    $targetDir = "uploads/";
+    $targetFile = $targetDir.basename($_FILES["profile_picture"]["name"]);
 
-    
-    $uploadOk = 1;
-    $fileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
-
-    // If everything is ok, move the file to the target directory
-    if ($uploadOk == 1) {
-        if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFile)) {
-            echo "The file ". basename($_FILES["file"]["name"]). " has been uploaded.";
-        } else {
-            echo "Sorry, there was an error uploading your file.";
-        }
+    if(move_uploaded_file($_FILES["profile_picture"]["tmp_name"], $targetFile)){
+        echo "The File has uploaded";
+    }else{
+        echo "Sorry some error has happend";
     }
-        */
+
 }
-    
-
-    
-
 
 ?>
